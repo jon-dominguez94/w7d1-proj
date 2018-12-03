@@ -6,7 +6,6 @@ const App = () => {
   );
 };
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("content");
   ReactDOM.render(<App/>, root);
