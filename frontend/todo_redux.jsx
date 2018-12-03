@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 const App = () => {
   return (
-    <h1>React is working!</h1>
+    <h1>Todos App</h1>
   );
 };
 
