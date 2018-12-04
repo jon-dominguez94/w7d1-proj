@@ -11,7 +11,9 @@ class TodoForm extends React.Component {
     };
   }
 
- 
+  update(prop) {
+    return e => this.setState({[prop]: e.target.value});
+  }
 
   render() {
     return (
