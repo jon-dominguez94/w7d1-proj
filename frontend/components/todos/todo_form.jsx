@@ -1,4 +1,5 @@
 import React from 'react';
+import uniqueId from '../../util/unique_id';
 
 class TodoForm extends React.Component {
   constructor(props) {
@@ -10,16 +11,18 @@ class TodoForm extends React.Component {
     };
   }
 
+ 
+
   render() {
     return (
       <form className="todo-form">
         <label>Title:
-          <input type="text" value={this.state.title}/>
+          <input type="text" defaultValue={this.state.title}/>
         </label>
         <label>Body:
-          <input type="text" value={this.state.body}/>
+          <input type="text" defaultValue={this.state.body}/>
         </label>
-        <input type="submit" name="Submit" id=""/>
+        <input type="submit" name="" id="" value="Create Todo"/>
       </form>
     );
   }
