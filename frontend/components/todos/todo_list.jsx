@@ -10,10 +10,12 @@ class TodoList extends React.Component {
       )
     );
     return (
-      <ul className="todo-list">
-        {todoTitles}
-      </ul>
-      <TodoForm receiveTodo={receiveTodo} />
+      <>
+        <ul className="todo-list">
+          {todoTitles}
+        </ul>
+        <TodoForm receiveTodo={receiveTodo} />
+      </>
     );
   }
 }

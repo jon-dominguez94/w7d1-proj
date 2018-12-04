@@ -11,11 +11,17 @@ class TodoForm extends React.Component {
   }
 
   render() {
-    <form className="todo-form">
-      <label>Title:
-        
-      </label>
-    </form>
+    return (
+      <form className="todo-form">
+        <label>Title:
+          <input type="text" value={this.state.title}/>
+        </label>
+        <label>Body:
+          <input type="text" value={this.state.body}/>
+        </label>
+        <input type="submit" name="Submit" id=""/>
+      </form>
+    );
   }
 }
 
