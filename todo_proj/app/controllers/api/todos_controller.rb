@@ -27,9 +27,12 @@ class Api::TodosController < ApplicationController
   end
 
   def destroy
+    @todo = Todo.find(params[:id])
+    @todo.destroy
+    render json: @todo
   end
 
   def todo_params
-    params.require(:todo).permite(:title, :body)
+    params.require(:todo).permit(:title, :body, :done)
   end
 end
